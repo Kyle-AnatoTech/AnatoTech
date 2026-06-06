@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anato-Tech — Intraosseous Access Training Models</title>
+  <meta name="description" content="High-fidelity intraosseous access training models for emergency physicians, paramedics, and ED nurses. Train the skill. Save the life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a class="logo" href="/" aria-label="Anato-Tech home">
+        <span class="logo-anato">ANATO</span>
+        <span class="logo-tech">TECH</span>
+        <span class="logo-dot" aria-hidden="true">●</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#product" class="nav-link">The Model</a></li>
+        <li><a href="#catalog" class="nav-link">Shop</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#company" class="nav-link">Company</a></li>
+      </ul>
+      <a href="#catalog" class="btn btn-primary nav-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Shop Now
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV PANEL -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">✕</button>
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="#product" class="mobile-nav-link">The Model</a></li>
+      <li><a href="#catalog" class="mobile-nav-link">Shop</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link">Reviews</a></li>
+      <li><a href="#company" class="mobile-nav-link">Company</a></li>
+      <li><a href="#catalog" class="btn btn-primary" style="display:inline-block;margin-top:8px;">Shop Now</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-cursor-glow" id="heroGlow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Intraosseous Access Training</p>
+          <h1 class="hero-heading">Train the skill.<br>Save the <span class="highlight">life.</span></h1>
+          <p class="hero-sub">Anato-Tech's high-fidelity IO humeral training model delivers the tactile feedback, anatomical landmarks, and insertion resistance of real clinical practice — so your team is ready when it matters most.</p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary btn-lg">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Shop Products
+            </a>
+            <a href="#product" class="btn btn-ghost btn-lg">See How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Insertions per insert set</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Compatible IO systems</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">&lt;30s</span>
+              <span class="stat-label">Insert swap time</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">&lt;6 lbs</span>
+              <span class="stat-label">Fully portable</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-graphic reveal reveal-delay-1" aria-hidden="true">
+          <!-- Anatomical Blueprint SVG — Humeral IO focus -->
+          <svg viewBox="0 0 480 480" width="480" height="480" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+            <defs>
+              <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="12" cy="12" r="0.8" fill="rgba(0,194,255,0.06)"/>
+              </pattern>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+              </filter>
+            </defs>
+            <rect width="480" height="480" fill="url(#grid)"/>
+
+            <!-- Outer rings / targeting reticle -->
+            <circle cx="240" cy="200" r="190" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.1" fill="none" stroke-dasharray="4 8"/>
+            <circle cx="240" cy="200" r="160" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.14" fill="none"/>
+            <circle cx="240" cy="200" r="130" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.18" fill="none" stroke-dasharray="2 6"/>
+            <circle cx="240" cy="200" r="100" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.35" fill="none" class="pulse-ring"/>
+            <circle cx="240" cy="200" r="100" stroke="#00C2FF" stroke-width="1.5" stroke-opacity="0.5" fill="none" class="pulse-ring-inner"/>
+
+            <!-- Crosshairs -->
+            <line x1="240" y1="50" x2="240" y2="145" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3"/>
+            <line x1="240" y1="255" x2="240" y2="350" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3"/>
+            <line x1="90" y1="200" x2="185" y2="200" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3"/>
+            <line x1="295" y1="200" x2="390" y2="200" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3"/>
+
+            <!-- Humeral head (ball) — proximal humerus -->
+            <ellipse cx="240" cy="165" rx="44" ry="50" stroke="#00C2FF" stroke-width="1.5" stroke-opacity="0.65" fill="rgba(0,194,255,0.05)"/>
+            <!-- Surgical neck -->
+            <line x1="210" y1="208" x2="204" y2="235" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5"/>
+            <line x1="270" y1="208" x2="276" y2="235" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5"/>
+            <!-- Humeral shaft -->
+            <rect x="204" y="235" width="72" height="140" rx="14" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5" fill="rgba(0,194,255,0.03)"/>
+
+            <!-- Cortical bone layer indication (inner offset) -->
+            <ellipse cx="240" cy="165" rx="36" ry="42" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.35" fill="none" stroke-dasharray="3 5"/>
+            <!-- Medullary cavity -->
+            <ellipse cx="240" cy="165" rx="18" ry="22" stroke="#00E5B4" stroke-width="1" stroke-opacity="0.6" fill="rgba(0,229,180,0.06)"/>
+            <circle cx="240" cy="165" r="5" fill="#00E5B4" fill-opacity="0.5"/>
+
+            <!-- IO needle insertion path -->
+            <line x1="240" y1="80" x2="240" y2="155" stroke="#00E5B4" stroke-width="2" stroke-opacity="0.9" stroke-dasharray="5 3"/>
+            <!-- Needle tip arrowhead -->
+            <polygon points="240,158 235,148 245,148" fill="#00E5B4" fill-opacity="0.9"/>
+            <!-- Needle shaft above -->
+            <rect x="237" y="50" width="6" height="32" rx="3" fill="#00C2FF" fill-opacity="0.7"/>
+
+            <!-- Layer annotation lines — right side -->
+            <line x1="284" y1="130" x2="340" y2="108" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.4"/>
+            <line x1="340" y1="108" x2="390" y2="108" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.4"/>
+            <text x="393" y="111" font-family="Inter, sans-serif" font-size="9" fill="#B4B2A9" fill-opacity="0.7">SKIN LAYER · 1.5–2.5mm</text>
+
+            <line x1="276" y1="150" x2="340" y2="138" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.4"/>
+            <line x1="340" y1="138" x2="390" y2="138" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.4"/>
+            <text x="393" y="141" font-family="Inter, sans-serif" font-size="9" fill="#B4B2A9" fill-opacity="0.7">SUB-Q · 20–27mm</text>
+
+            <line x1="276" y1="165" x2="340" y2="168" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.4"/>
+            <line x1="340" y1="168" x2="390" y2="168" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.4"/>
+            <text x="393" y="171" font-family="Inter, sans-serif" font-size="9" fill="#00C2FF" fill-opacity="0.9">CORTICAL · 3–5mm</text>
+
+            <line x1="258" y1="172" x2="340" y2="196" stroke="#00E5B4" stroke-width="0.6" stroke-opacity="0.6"/>
+            <line x1="340" y1="196" x2="390" y2="196" stroke="#00E5B4" stroke-width="0.6" stroke-opacity="0.6"/>
+            <text x="393" y="199" font-family="Inter, sans-serif" font-size="9" fill="#00E5B4" fill-opacity="0.9">MEDULLARY CAVITY</text>
+
+            <!-- Left side annotations -->
+            <line x1="196" y1="148" x2="140" y2="135" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.35"/>
+            <line x1="88" y1="135" x2="140" y2="135" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.35"/>
+            <text x="84" y="138" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.7">HUMERAL HEAD</text>
+
+            <line x1="204" y1="220" x2="140" y2="220" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.35"/>
+            <line x1="88" y1="220" x2="140" y2="220" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.35"/>
+            <text x="84" y="223" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.7">SURGICAL NECK</text>
+
+            <!-- Depth callout -->
+            <line x1="200" y1="80" x2="200" y2="158" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.3"/>
+            <line x1="196" y1="80" x2="204" y2="80" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.3"/>
+            <line x1="196" y1="158" x2="204" y2="158" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.3"/>
+            <text x="194" y="122" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#00C2FF" fill-opacity="0.7" transform="rotate(-90 194 122)">~30mm depth</text>
+
+            <!-- Corner L-brackets -->
+            <polyline points="45,45 60,45 60,60" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+            <polyline points="435,45 420,45 420,60" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+            <polyline points="45,435 60,435 60,420" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+            <polyline points="435,435 420,435 420,420" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+
+            <!-- Compatible devices badge area -->
+            <rect x="60" y="340" width="360" height="90" rx="6" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.2" fill="rgba(0,194,255,0.03)"/>
+            <text x="240" y="362" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.6" letter-spacing="2">COMPATIBLE DEVICES</text>
+            <text x="120" y="390" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="11" fill="#00C2FF" fill-opacity="0.8" font-weight="600">EZ-IO</text>
+            <text x="120" y="405" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.6">Teleflex</text>
+            <text x="240" y="390" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="11" fill="#00C2FF" fill-opacity="0.8" font-weight="600">SAM IO</text>
+            <text x="240" y="405" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.6">Sam Medical</text>
+            <text x="360" y="390" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="11" fill="#00C2FF" fill-opacity="0.8" font-weight="600">BIG</text>
+            <text x="360" y="405" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.6">Bone Injection Gun</text>
+            <line x1="165" y1="375" x2="165" y2="415" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.2"/>
+            <line x1="315" y1="375" x2="315" y2="415" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.2"/>
+
+            <text x="32" y="466" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88" fill-opacity="0.5">ANATOSIM IO-H1 · PROXIMAL HUMERUS · REV 1.0</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TRUST BAR -->
+    <section class="marquee-section" aria-label="Compatible with and trusted by">
+      <p class="marquee-label">Compatible with industry-standard IO devices · Trusted by emergency medicine teams nationwide</p>
+      <div class="marquee-track-outer">
+        <div class="marquee-track" aria-hidden="true">
+          <div class="marquee-inner">
+            <span class="marquee-badge">EZ-IO · Teleflex</span>
+            <span class="marquee-badge">SAM IO · Sam Medical</span>
+            <span class="marquee-badge">BIG · Bone Injection Gun</span>
+            <span class="marquee-badge">Emergency Medicine</span>
+            <span class="marquee-badge">Critical Care Nursing</span>
+            <span class="marquee-badge">EMS / Paramedic Training</span>
+            <span class="marquee-badge">Military Combat Casualty Care</span>
+            <span class="marquee-badge">Simulation Lab Education</span>
+            <span class="marquee-badge">EZ-IO · Teleflex</span>
+            <span class="marquee-badge">SAM IO · Sam Medical</span>
+            <span class="marquee-badge">BIG · Bone Injection Gun</span>
+            <span class="marquee-badge">Emergency Medicine</span>
+            <span class="marquee-badge">Critical Care Nursing</span>
+            <span class="marquee-badge">EMS / Paramedic Training</span>
+            <span class="marquee-badge">Military Combat Casualty Care</span>
+            <span class="marquee-badge">Simulation Lab Education</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE MODEL / PRODUCT FEATURES -->
+    <section class="section platform-section" id="product">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">High-Fidelity Design</p>
+          <h2 class="section-heading">Built to feel real. Designed to teach.</h2>
+          <p class="section-sub">Every layer of the Anato-Tech IO Training Model is engineered to replicate the anatomy, resistance, and tactile feedback of a live humeral IO insertion — so skill acquired in training transfers directly to patient care.</p>
+        </div>
+        <div class="feature-grid">
+
+          <article class="feature-card reveal">
+            <div class="feature-tag">CORE FEEL</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="24" cy="18" rx="14" ry="16" stroke="#00C2FF" stroke-width="1.5" stroke-opacity="0.7" fill="rgba(0,194,255,0.04)"/>
+                <ellipse cx="24" cy="18" rx="9" ry="11" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3 4"/>
+                <ellipse cx="24" cy="18" rx="4" ry="5" stroke="#00E5B4" stroke-width="1.2" stroke-opacity="0.8" fill="rgba(0,229,180,0.08)"/>
+                <line x1="24" y1="4" x2="24" y2="14" stroke="#00E5B4" stroke-width="2" stroke-dasharray="3 2"/>
+                <polygon points="24,17 21,11 27,11" fill="#00E5B4" fill-opacity="0.8"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Cortical Bone Resistance</h3>
+            <p class="feature-desc">The high-density polyurethane shell replicates the drilling resistance and audible "pop" of real cortical bone, validated against clinical IO insertion data at 3–5mm wall thickness.</p>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-tag">MULTI-LAYER</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="8" width="36" height="8" rx="2" stroke="#00C2FF" stroke-width="1.5" fill="rgba(0,194,255,0.08)" stroke-opacity="0.5"/>
+                <rect x="6" y="18" width="36" height="8" rx="2" stroke="#00C2FF" stroke-width="1.5" fill="rgba(0,194,255,0.05)" stroke-opacity="0.4"/>
+                <rect x="6" y="28" width="36" height="8" rx="2" stroke="#00C2FF" stroke-width="1.5" fill="rgba(0,194,255,0.07)" stroke-opacity="0.6"/>
+                <rect x="6" y="38" width="36" height="5" rx="2" stroke="#00E5B4" stroke-width="1.5" fill="rgba(0,229,180,0.08)" stroke-opacity="0.8"/>
+                <text x="10" y="15" font-family="Inter" font-size="6" fill="#B4B2A9">SKIN</text>
+                <text x="10" y="25" font-family="Inter" font-size="6" fill="#B4B2A9">SUB-Q</text>
+                <text x="10" y="35" font-family="Inter" font-size="6" fill="#B4B2A9">CORTICAL</text>
+                <text x="10" y="44" font-family="Inter" font-size="6" fill="#00E5B4">MEDULLARY</text>
+              </svg>
+            </div>
+            <h3 class="feature-title">4-Layer Anatomical Fidelity</h3>
+            <p class="feature-desc">Outer skin, subcutaneous tissue, cortical bone shell, and medullary cavity — each layer engineered to deliver the depth cues and palpable landmarks of a real proximal humerus.</p>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-tag">FIELD-READY</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="16" width="28" height="20" rx="4" stroke="#00C2FF" stroke-width="1.5" fill="none" stroke-opacity="0.6"/>
+                <path d="M18 16 v-4 a6 6 0 0 1 12 0 v4" stroke="#00C2FF" stroke-width="1.5" fill="none" stroke-opacity="0.5"/>
+                <circle cx="24" cy="26" r="4" stroke="#00E5B4" stroke-width="1.5" fill="rgba(0,229,180,0.1)"/>
+                <polyline points="21,26 23,28 27,24" stroke="#00E5B4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Tool-Free Replaceable Inserts</h3>
+            <p class="feature-desc">Skin and cortical layers are field-replaceable in under 30 seconds — no tools required. Each insert set supports 50+ full IO insertions before replacement is needed.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-tag">COMPATIBLE</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="18" stroke="#00C2FF" stroke-width="1.5" fill="none" stroke-opacity="0.4"/>
+                <line x1="24" y1="6" x2="24" y2="16" stroke="#00C2FF" stroke-width="2" stroke-linecap="round"/>
+                <rect x="21" y="16" width="6" height="14" rx="2" stroke="#00C2FF" stroke-width="1.5" fill="rgba(0,194,255,0.1)"/>
+                <ellipse cx="24" cy="32" rx="5" ry="3" stroke="#00E5B4" stroke-width="1.2" fill="rgba(0,229,180,0.08)"/>
+                <text x="24" y="44" text-anchor="middle" font-family="Inter" font-size="7" fill="#8C8C88">15G / 45mm</text>
+              </svg>
+            </div>
+            <h3 class="feature-title">Universal IO Device Compatibility</h3>
+            <p class="feature-desc">Designed to work with EZ-IO (Teleflex) 15G and 45mm needles, the SAM IO manual gun, and the BIG spring-loaded system — the same devices used in your ER or field kit.</p>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-tag">ANATOMY</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="24" cy="14" rx="12" ry="13" stroke="#00C2FF" stroke-width="1.5" stroke-opacity="0.7" fill="rgba(0,194,255,0.04)"/>
+                <line x1="18" y1="26" x2="16" y2="38" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5"/>
+                <line x1="30" y1="26" x2="32" y2="38" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5"/>
+                <line x1="14" y1="10" x2="34" y2="10" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="2 3"/>
+                <circle cx="24" cy="10" r="2" fill="#00E5B4" fill-opacity="0.7"/>
+                <text x="36" y="13" font-family="Inter" font-size="7" fill="#B4B2A9">1–2cm</text>
+                <text x="36" y="22" font-family="Inter" font-size="7" fill="#8C8C88">above</text>
+                <text x="36" y="31" font-family="Inter" font-size="7" fill="#8C8C88">surg. neck</text>
+              </svg>
+            </div>
+            <h3 class="feature-title">Palpable Anatomical Landmarks</h3>
+            <p class="feature-desc">The humeral tuberosity and "ball" surface are clearly palpable through the skin layer. The arm is anatomically positioned — adducted and internally rotated — as in live clinical practice.</p>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-tag">PORTABLE</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6 L38 14 L38 30 Q38 40 24 46 Q10 40 10 30 L10 14 Z" stroke="#00C2FF" stroke-width="1.5" fill="rgba(0,194,255,0.04)" stroke-opacity="0.7"/>
+                <polyline points="16,26 21,32 32,20" stroke="#00E5B4" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="24" y="44" text-anchor="middle" font-family="Inter" font-size="0">shield</text>
+              </svg>
+            </div>
+            <h3 class="feature-title">Portable &amp; Stable</h3>
+            <p class="feature-desc">The full assembly weighs under 6 lbs and remains stable on any flat surface during insertion — no mounting hardware needed. Built for sim labs, classrooms, and field training alike.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HOW IO ACCESS WORKS — visual explainer (replaces Science) -->
+    <section class="section io-explainer-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Why IO Access</p>
+          <h2 class="section-heading">When IV access fails, IO saves lives.</h2>
+          <p class="section-sub">Intraosseous access delivers drugs and fluids directly to the bone marrow — fast, reliable, and critically important when peripheral IV access is impossible in a time-critical emergency.</p>
+        </div>
+        <div class="io-steps-grid">
+          <div class="io-step reveal">
+            <div class="io-step-num">01</div>
+            <h3 class="io-step-title">Identify the Site</h3>
+            <p class="io-step-desc">Locate the proximal humerus approximately 1–2 cm above the surgical neck. Palpate the humeral head and confirm correct arm position — adducted and internally rotated at the patient's side.</p>
+          </div>
+          <div class="io-step reveal reveal-delay-1">
+            <div class="io-step-num">02</div>
+            <h3 class="io-step-title">Drive the Needle</h3>
+            <p class="io-step-desc">Apply firm, controlled pressure with your IO driver through the skin, subcutaneous tissue, and cortical bone. A distinct change in resistance — the "pop" — confirms entry into the medullary cavity.</p>
+          </div>
+          <div class="io-step reveal reveal-delay-2">
+            <div class="io-step-num">03</div>
+            <h3 class="io-step-title">Confirm Placement</h3>
+            <p class="io-step-desc">Remove the stylet, confirm patency with a flush, and verify needle stability. The needle should stand upright without support. Aspiration of marrow confirms correct positioning.</p>
+          </div>
+          <div class="io-step reveal reveal-delay-3">
+            <div class="io-step-num">04</div>
+            <h3 class="io-step-title">Infuse &amp; Monitor</h3>
+            <p class="io-step-desc">Attach IV tubing and begin infusion of fluids, medications, or blood products. Monitor the site for extravasation. IO access provides reliable vascular access within 60 seconds of decision.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. STATS -->
+    <section class="stats-section" id="stats">
+      <div class="stats-grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="stats-row">
+          <div class="big-stat reveal">
+            <span class="big-stat-number" data-target="50" data-suffix="+" data-display="50+">50+</span>
+            <span class="big-stat-label">Insertions per replaceable insert set</span>
+          </div>
+          <div class="stat-vdivider" aria-hidden="true"></div>
+          <div class="big-stat reveal reveal-delay-1">
+            <span class="big-stat-number" data-target="4" data-suffix="" data-display="4">4</span>
+            <span class="big-stat-label">Anatomical layers replicated</span>
+          </div>
+          <div class="stat-vdivider" aria-hidden="true"></div>
+          <div class="big-stat reveal reveal-delay-2">
+            <span class="big-stat-number" data-target="30" data-suffix="s" data-display="30s">30s</span>
+            <span class="big-stat-label">Insert swap — no tools required</span>
+          </div>
+          <div class="stat-vdivider" aria-hidden="true"></div>
+          <div class="big-stat reveal reveal-delay-3">
+            <span class="big-stat-number" data-target="3" data-suffix="" data-display="3">3</span>
+            <span class="big-stat-label">Compatible IO driver systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PRODUCT CATALOG -->
+    <section class="section catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Product Catalog</p>
+          <h2 class="section-heading">Choose your training setup</h2>
+          <p class="section-sub">Whether you're outfitting a single sim bay or a full EMS training program, we have a configuration for your team. All products ship Q4 2026.</p>
+        </div>
+        <div class="catalog-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card reveal">
+            <div class="product-image">
+              <svg viewBox="0 0 400 260" width="100%" height="260" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="260" fill="#0D1525"/>
+                <pattern id="pgrid1" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="10" cy="10" r="0.5" fill="rgba(0,194,255,0.07)"/>
+                </pattern>
+                <rect width="400" height="260" fill="url(#pgrid1)"/>
+                <!-- Shoulder/upper arm silhouette -->
+                <ellipse cx="200" cy="100" rx="55" ry="60" fill="#1A2540" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.4"/>
+                <rect x="165" y="155" width="70" height="80" rx="16" fill="#1A2540" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.3"/>
+                <!-- Skin layer translucent hint -->
+                <ellipse cx="200" cy="100" rx="48" ry="53" fill="rgba(0,194,255,0.04)" stroke="#00C2FF" stroke-width="0.6" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+                <!-- Cortical bone -->
+                <ellipse cx="200" cy="100" rx="32" ry="36" fill="rgba(0,194,255,0.06)" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.4"/>
+                <!-- Medullary cavity -->
+                <ellipse cx="200" cy="100" rx="14" ry="16" fill="rgba(0,229,180,0.08)" stroke="#00E5B4" stroke-width="1" stroke-opacity="0.7"/>
+                <!-- IO needle -->
+                <line x1="200" y1="30" x2="200" y2="88" stroke="#00E5B4" stroke-width="2.5" stroke-linecap="round"/>
+                <polygon points="200,92 195,82 205,82" fill="#00E5B4"/>
+                <rect x="197" y="18" width="6" height="14" rx="3" fill="#00C2FF" fill-opacity="0.8"/>
+                <!-- Labels -->
+                <text x="200" y="240" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">IO Humeral Training Model</text>
+                <text x="200" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8C8C88">Complete Assembly · Adult Proximal Humerus</text>
+                <!-- Annotation lines -->
+                <line x1="252" y1="72" x2="300" y2="55" stroke="#00C2FF" stroke-width="0.5" stroke-opacity="0.4"/>
+                <text x="304" y="58" font-family="Inter, sans-serif" font-size="8" fill="#8C8C88">CORTICAL SHELL</text>
+                <line x1="214" y1="96" x2="300" y2="85" stroke="#00E5B4" stroke-width="0.5" stroke-opacity="0.5"/>
+                <text x="304" y="88" font-family="Inter, sans-serif" font-size="8" fill="#00E5B4">MEDULLARY</text>
+              </svg>
+              <div class="product-badge">FLAGSHIP</div>
+            </div>
+            <div class="product-info">
+              <div class="product-header">
+                <div>
+                  <p class="product-sku">AT-IO-H1</p>
+                  <h3 class="product-name">IO Humeral Training Model</h3>
+                  <p class="product-sub">Complete assembly with (1) insert set included</p>
+                </div>
+                <div class="product-price-block">
+                  <span class="product-price">$149</span>
+                  <span class="product-price-note">per unit</span>
+                </div>
+              </div>
+              <ul class="product-features">
+                <li>4-layer anatomy: skin, sub-Q, cortical bone, medullary cavity</li>
+                <li>Adult proximal humerus, higher BMI profile (~30mm depth)</li>
+                <li>Arm adducted &amp; internally rotated for clinical realism</li>
+                <li>For Training Use Only · Non-sterile · Non-implantable</li>
+              </ul>
+              <div class="product-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" aria-label="Decrease quantity" data-action="dec">−</button>
+                  <input class="qty-input" type="number" value="1" min="1" max="99" aria-label="Quantity"/>
+                  <button class="qty-btn" aria-label="Increase quantity" data-action="inc">+</button>
+                </div>
+                <button class="btn btn-primary btn-cart" data-product="AT-IO-H1" data-name="IO Humeral Training Model" data-price="149">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-image">
+              <svg viewBox="0 0 400 260" width="100%" height="260" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="260" fill="#0D1525"/>
+                <pattern id="pgrid2" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="10" cy="10" r="0.5" fill="rgba(0,194,255,0.07)"/>
+                </pattern>
+                <rect width="400" height="260" fill="url(#pgrid2)"/>
+                <!-- Two insert cassettes side by side -->
+                <!-- Cassette 1: skin layer -->
+                <rect x="80" y="60" width="100" height="130" rx="10" fill="#1A2540" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5"/>
+                <ellipse cx="130" cy="120" rx="36" ry="42" fill="rgba(0,194,255,0.06)" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.4"/>
+                <text x="130" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#B4B2A9">SKIN + SUB-Q</text>
+                <text x="130" y="183" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88">Silicone · Translucent</text>
+                <!-- Cassette 2: cortical bone -->
+                <rect x="220" y="60" width="100" height="130" rx="10" fill="#1A2540" stroke="#00E5B4" stroke-width="1.2" stroke-opacity="0.5"/>
+                <ellipse cx="270" cy="115" rx="30" ry="34" fill="rgba(0,229,180,0.05)" stroke="#00E5B4" stroke-width="1" stroke-opacity="0.5"/>
+                <ellipse cx="270" cy="115" rx="14" ry="16" fill="rgba(0,229,180,0.08)" stroke="#00E5B4" stroke-width="0.8" stroke-opacity="0.7"/>
+                <text x="270" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#B4B2A9">CORTICAL SHELL</text>
+                <text x="270" y="183" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88">HDPU Resin · 3–5mm</text>
+                <!-- Label -->
+                <text x="200" y="240" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Replacement Insert Set</text>
+                <text x="200" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8C8C88">Skin + Sub-Q · Cortical Shell · 50+ Insertions</text>
+              </svg>
+              <div class="product-badge product-badge-teal">CONSUMABLE</div>
+            </div>
+            <div class="product-info">
+              <div class="product-header">
+                <div>
+                  <p class="product-sku">AT-IO-INS</p>
+                  <h3 class="product-name">Replacement Insert Set</h3>
+                  <p class="product-sub">Skin layer + cortical bone shell · Tool-free swap in &lt;30s</p>
+                </div>
+                <div class="product-price-block">
+                  <span class="product-price">$39</span>
+                  <span class="product-price-note">per set</span>
+                </div>
+              </div>
+              <ul class="product-features">
+                <li>Rated for 50+ full IO insertions before replacement</li>
+                <li>Medical-grade silicone skin, translucent with pigmentation</li>
+                <li>HDPU cortical shell, consistent resistance batch-to-batch</li>
+                <li>No tools required · Inserts from rear of model</li>
+              </ul>
+              <div class="product-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" aria-label="Decrease quantity" data-action="dec">−</button>
+                  <input class="qty-input" type="number" value="1" min="1" max="99" aria-label="Quantity"/>
+                  <button class="qty-btn" aria-label="Increase quantity" data-action="inc">+</button>
+                </div>
+                <button class="btn btn-primary btn-cart" data-product="AT-IO-INS" data-name="Replacement Insert Set" data-price="39">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-image product-image-featured">
+              <svg viewBox="0 0 400 260" width="100%" height="260" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="260" fill="#0D1525"/>
+                <pattern id="pgrid3" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="10" cy="10" r="0.5" fill="rgba(0,194,255,0.07)"/>
+                </pattern>
+                <rect width="400" height="260" fill="url(#pgrid3)"/>
+                <!-- Kit: model + insert stack -->
+                <!-- Main model -->
+                <ellipse cx="150" cy="110" rx="50" ry="55" fill="#1A2540" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.5"/>
+                <ellipse cx="150" cy="110" rx="38" ry="43" fill="rgba(0,194,255,0.05)" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="3 4"/>
+                <ellipse cx="150" cy="110" rx="22" ry="25" fill="rgba(0,194,255,0.07)" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.4"/>
+                <ellipse cx="150" cy="110" rx="10" ry="11" fill="rgba(0,229,180,0.1)" stroke="#00E5B4" stroke-width="1" stroke-opacity="0.8"/>
+                <line x1="150" y1="40" x2="150" y2="100" stroke="#00E5B4" stroke-width="2" stroke-dasharray="4 3"/>
+                <polygon points="150,104 145,94 155,94" fill="#00E5B4"/>
+                <rect x="147" y="28" width="6" height="14" rx="3" fill="#00C2FF" fill-opacity="0.8"/>
+                <!-- Insert stack -->
+                <rect x="248" y="70" width="80" height="18" rx="4" fill="#1A2540" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3"/>
+                <rect x="252" y="92" width="80" height="18" rx="4" fill="#1A2540" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3"/>
+                <rect x="256" y="114" width="80" height="18" rx="4" fill="#1A2540" stroke="#00E5B4" stroke-width="0.8" stroke-opacity="0.4"/>
+                <text x="288" y="83" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#8C8C88">INSERT ×1</text>
+                <text x="292" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#8C8C88">INSERT ×2</text>
+                <text x="296" y="127" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#00E5B4">INSERT ×3</text>
+                <text x="288" y="155" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#B4B2A9">3 Insert Sets</text>
+                <!-- Connector -->
+                <line x1="205" y1="110" x2="244" y2="110" stroke="#00C2FF" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+                <text x="200" y="225" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Starter Kit</text>
+                <text x="200" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8C8C88">Training Model + 3 Insert Sets · 150+ Insertions</text>
+                <text x="200" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#00E5B4">Save $28 vs. individual purchase</text>
+              </svg>
+              <div class="product-badge product-badge-gold">BEST VALUE</div>
+            </div>
+            <div class="product-info">
+              <div class="product-header">
+                <div>
+                  <p class="product-sku">AT-IO-KIT1</p>
+                  <h3 class="product-name">IO Starter Kit</h3>
+                  <p class="product-sub">1 Training Model + 3 Insert Sets · 150+ total insertions</p>
+                </div>
+                <div class="product-price-block">
+                  <span class="product-price">$219</span>
+                  <span class="product-price-note">
+                    <s class="price-strike">$266</s> · save $47
+                  </span>
+                </div>
+              </div>
+              <ul class="product-features">
+                <li>Everything in the base model, plus 2 additional insert sets</li>
+                <li>150+ insertions — ideal for a simulation course or workshop</li>
+                <li>Best value for individual instructors or small sim programs</li>
+                <li>Ships as a single package · Q4 2026</li>
+              </ul>
+              <div class="product-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" aria-label="Decrease quantity" data-action="dec">−</button>
+                  <input class="qty-input" type="number" value="1" min="1" max="99" aria-label="Quantity"/>
+                  <button class="qty-btn" aria-label="Increase quantity" data-action="inc">+</button>
+                </div>
+                <button class="btn btn-primary btn-cart" data-product="AT-IO-KIT1" data-name="IO Starter Kit" data-price="219">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 — Institutional Bundle -->
+          <article class="product-card product-card-wide reveal">
+            <div class="product-image product-image-wide">
+              <svg viewBox="0 0 800 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
+                <rect width="800" height="220" fill="#0D1525"/>
+                <pattern id="pgrid4" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="10" cy="10" r="0.5" fill="rgba(0,194,255,0.07)"/>
+                </pattern>
+                <rect width="800" height="220" fill="url(#pgrid4)"/>
+                <!-- 5 models in a row -->
+                <g opacity="0.9">
+                  <!-- Model 1 -->
+                  <ellipse cx="80" cy="100" rx="42" ry="48" fill="#1A2540" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.45"/>
+                  <ellipse cx="80" cy="100" rx="18" ry="20" fill="rgba(0,229,180,0.08)" stroke="#00E5B4" stroke-width="0.8" stroke-opacity="0.7"/>
+                  <line x1="80" y1="40" x2="80" y2="82" stroke="#00E5B4" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <polygon points="80,85 76,76 84,76" fill="#00E5B4"/>
+                  <!-- Model 2 -->
+                  <ellipse cx="210" cy="100" rx="42" ry="48" fill="#1A2540" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.45"/>
+                  <ellipse cx="210" cy="100" rx="18" ry="20" fill="rgba(0,229,180,0.08)" stroke="#00E5B4" stroke-width="0.8" stroke-opacity="0.7"/>
+                  <line x1="210" y1="40" x2="210" y2="82" stroke="#00E5B4" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <polygon points="210,85 206,76 214,76" fill="#00E5B4"/>
+                  <!-- Model 3 -->
+                  <ellipse cx="340" cy="100" rx="42" ry="48" fill="#1A2540" stroke="#00C2FF" stroke-width="1.2" stroke-opacity="0.55"/>
+                  <ellipse cx="340" cy="100" rx="18" ry="20" fill="rgba(0,229,180,0.1)" stroke="#00E5B4" stroke-width="1" stroke-opacity="0.8"/>
+                  <line x1="340" y1="40" x2="340" y2="82" stroke="#00E5B4" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <polygon points="340,85 336,76 344,76" fill="#00E5B4"/>
+                  <!-- Model 4 -->
+                  <ellipse cx="470" cy="100" rx="42" ry="48" fill="#1A2540" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.45"/>
+                  <ellipse cx="470" cy="100" rx="18" ry="20" fill="rgba(0,229,180,0.08)" stroke="#00E5B4" stroke-width="0.8" stroke-opacity="0.7"/>
+                  <line x1="470" y1="40" x2="470" y2="82" stroke="#00E5B4" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <polygon points="470,85 466,76 474,76" fill="#00E5B4"/>
+                  <!-- Model 5 -->
+                  <ellipse cx="600" cy="100" rx="42" ry="48" fill="#1A2540" stroke="#00C2FF" stroke-width="1" stroke-opacity="0.45"/>
+                  <ellipse cx="600" cy="100" rx="18" ry="20" fill="rgba(0,229,180,0.08)" stroke="#00E5B4" stroke-width="0.8" stroke-opacity="0.7"/>
+                  <line x1="600" y1="40" x2="600" y2="82" stroke="#00E5B4" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <polygon points="600,85 596,76 604,76" fill="#00E5B4"/>
+                </g>
+                <!-- Insert stack on far right -->
+                <rect x="672" y="55" width="70" height="14" rx="3" fill="#1A2540" stroke="#00C2FF" stroke-width="0.7" stroke-opacity="0.3"/>
+                <rect x="672" y="72" width="70" height="14" rx="3" fill="#1A2540" stroke="#00C2FF" stroke-width="0.7" stroke-opacity="0.3"/>
+                <rect x="672" y="89" width="70" height="14" rx="3" fill="#1A2540" stroke="#00E5B4" stroke-width="0.7" stroke-opacity="0.4"/>
+                <rect x="672" y="106" width="70" height="14" rx="3" fill="#1A2540" stroke="#00E5B4" stroke-width="0.7" stroke-opacity="0.4"/>
+                <text x="707" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#8C8C88">10 Insert Sets</text>
+                <!-- Labels -->
+                <text x="340" y="188" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Institutional Bundle</text>
+                <text x="340" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#8C8C88">5 Training Models · 10 Insert Sets · 500+ Insertions</text>
+              </svg>
+              <div class="product-badge product-badge-purple">INSTITUTIONAL</div>
+            </div>
+            <div class="product-info">
+              <div class="product-header">
+                <div>
+                  <p class="product-sku">AT-IO-INST5</p>
+                  <h3 class="product-name">Institutional Bundle</h3>
+                  <p class="product-sub">5 Training Models + 10 Insert Sets · 500+ total insertions</p>
+                </div>
+                <div class="product-price-block">
+                  <span class="product-price">$799</span>
+                  <span class="product-price-note">
+                    <s class="price-strike">$1,135</s> · save $336
+                  </span>
+                </div>
+              </div>
+              <ul class="product-features">
+                <li>Equip a full simulation lab, EMS training center, or residency program</li>
+                <li>10 insert sets (100–500+ insertions total depending on use)</li>
+                <li>Priority fulfillment · Dedicated account contact</li>
+                <li>Bulk pricing available for orders of 10+ bundles — contact us</li>
+              </ul>
+              <div class="product-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" aria-label="Decrease quantity" data-action="dec">−</button>
+                  <input class="qty-input" type="number" value="1" min="1" max="99" aria-label="Quantity"/>
+                  <button class="qty-btn" aria-label="Increase quantity" data-action="inc">+</button>
+                </div>
+                <button class="btn btn-primary btn-cart" data-product="AT-IO-INST5" data-name="Institutional Bundle" data-price="799">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /catalog-grid -->
+
+        <!-- Pre-order notice -->
+        <div class="preorder-notice reveal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFB020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p><strong>Pre-order open now</strong> — All products estimated to ship Q4 2026. A 100% refund is available at any time before fulfillment. For institutional POs or bulk pricing, contact <a href="mailto:Kyle.Johnston@Anato-Tech.com" class="notice-link">Kyle.Johnston@Anato-Tech.com</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CART DRAWER (hidden by default) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-header">
+        <h2 class="cart-title">Your Cart</h2>
+        <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display:none">
+        <div class="cart-total-row">
+          <span class="cart-total-label">Subtotal</span>
+          <span class="cart-total-val" id="cartTotal">$0</span>
+        </div>
+        <p class="cart-shipping-note">Shipping calculated at checkout · Ships Q4 2026</p>
+        <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Proceed to Checkout</button>
+        <p class="cart-disclaimer">For Training Use Only · Non-sterile · Non-implantable</p>
+      </div>
+    </aside>
+
+    <!-- Floating cart button -->
+    <button class="cart-fab" id="cartFab" aria-label="View cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cart-fab-count" id="cartFabCount" aria-label="Items in cart">0</span>
+    </button>
+
+    <!-- 8. TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header section-header-centered reveal">
+          <p class="eyebrow">Field Reviews</p>
+          <h2 class="section-heading">Trusted by clinicians who use IO access every day</h2>
+          <p class="section-sub" style="max-width:560px;margin:0 auto;">From emergency medicine residencies to combat medic programs, here's what practitioners say about training with the Anato-Tech IO model.</p>
+        </div>
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"The pop feedback on the cortical layer is as close to the real thing as I've felt in any trainer. My residents went from hesitant to confident in a single afternoon session."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">DR</div>
+              <div>
+                <p class="testimonial-name">Dr. Marcus R.</p>
+                <p class="testimonial-role">Emergency Medicine Attending · Level I Trauma Center</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"We've cycled through multiple IO trainers. Nothing else gives us the realistic tissue depth for a higher BMI patient. The replaceable inserts are a game-changer for high-volume training days."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">CM</div>
+              <div>
+                <p class="testimonial-name">Chris M., NRP</p>
+                <p class="testimonial-role">Paramedic Instructor · Regional EMS Training Division</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"Our ED nurses were hesitant about humeral IO. After two simulation sessions with this model, they're comfortable placing and confirming independently. Tactile fidelity is excellent."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SL</div>
+              <div>
+                <p class="testimonial-name">Sarah L., RN, CEN</p>
+                <p class="testimonial-role">ED Sim Coordinator · Academic Medical Center</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"We run IO training for 200+ combat medics a year. Portability matters — under 6 lbs means we can take it to any training site. Compatibility with the EZ-IO driver is exactly what we needed."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">JT</div>
+              <div>
+                <p class="testimonial-name">SSG James T.</p>
+                <p class="testimonial-role">Combat Medic Trainer · U.S. Army Medical Command</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"Finally a training device that forces correct arm positioning. The internal rotation requirement is exactly right, and my students can palpate the landmarks clearly through the skin layer."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">AM</div>
+              <div>
+                <p class="testimonial-name">Dr. Angela M., MD</p>
+                <p class="testimonial-role">Emergency Medicine Residency Director</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"The marrow aspiration simulation is a feature we didn't know we needed until we had it. Confirms to trainees that placement is correct. Worth every penny for the confidence it builds."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">BK</div>
+              <div>
+                <p class="testimonial-name">Ben K., RN, CFRN</p>
+                <p class="testimonial-role">Flight Nurse · Air Medical Program</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. COMPANY / TEAM -->
+    <section class="section company-section" id="company">
+      <div class="container">
+        <div class="section-header section-header-centered reveal">
+          <p class="eyebrow">About Anato-Tech</p>
+          <h2 class="section-heading">Built by people who understand the stakes</h2>
+          <p class="section-sub" style="max-width:600px;margin:0 auto;">Anato-Tech was founded with a single conviction: simulation equipment should feel real enough that the first time a clinician performs a procedure on a real patient, it feels familiar.</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-avatar" aria-hidden="true">KJ</div>
+            <div class="team-info">
+              <h3 class="team-name">Kyle Johnston</h3>
+              <div class="team-accent" aria-hidden="true"></div>
+              <p class="team-role">Founder &amp; Owner</p>
+              <p class="team-cred">Anato-Tech · (330) 571-7740</p>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-1">
+            <div class="team-avatar" aria-hidden="true">EM</div>
+            <div class="team-info">
+              <h3 class="team-name">Engineering &amp; Manufacturing</h3>
+              <div class="team-accent" aria-hidden="true"></div>
+              <p class="team-role">Design &amp; Prototyping</p>
+              <p class="team-cred">LSR Molding · HDPU Resin · CAD</p>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-2">
+            <div class="team-avatar" aria-hidden="true">QA</div>
+            <div class="team-info">
+              <h3 class="team-name">Quality &amp; Compliance</h3>
+              <div class="team-accent" aria-hidden="true"></div>
+              <p class="team-role">Regulatory Affairs</p>
+              <p class="team-cred">RoHS · REACH · For Training Use Only</p>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-3">
+            <div class="team-avatar" aria-hidden="true">CS</div>
+            <div class="team-info">
+              <h3 class="team-name">Clinical Advisory</h3>
+              <div class="team-accent" aria-hidden="true"></div>
+              <p class="team-role">Medical Validation</p>
+              <p class="team-cred">EM · EMS · Critical Care · Military</p>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="company-quote reveal">
+          <p class="quote-text">"Our models don't replace real patients — they make sure clinicians are ready before they ever need one."</p>
+          <cite class="quote-cite">— Kyle Johnston, Founder, Anato-Tech</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 10. CTA -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-inner reveal">
+          <h2 class="cta-heading">Ready to equip your team?</h2>
+          <p class="cta-sub">Pre-order now for Q4 2026 fulfillment. Institutional pricing and bulk POs available.</p>
+          <div class="cta-actions">
+            <a href="#catalog" class="btn btn-primary btn-lg">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Shop Products
+            </a>
+            <a href="mailto:Kyle.Johnston@Anato-Tech.com" class="btn btn-ghost btn-lg">Contact Us</a>
+          </div>
+          <div class="trust-badges">
+            <span class="trust-badge"><span class="trust-check" aria-hidden="true">✓</span> For Training Use Only</span>
+            <span class="trust-badge"><span class="trust-check" aria-hidden="true">✓</span> RoHS &amp; REACH Compliant</span>
+            <span class="trust-badge"><span class="trust-check" aria-hidden="true">✓</span> Non-sterile · Non-implantable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a class="logo" href="/" aria-label="Anato-Tech home">
+          <span class="logo-anato">ANATO</span>
+          <span class="logo-tech">TECH</span>
+          <span class="logo-dot" aria-hidden="true">●</span>
+        </a>
+        <p class="footer-desc">High-fidelity intraosseous access training models for emergency physicians, paramedics, ED nurses, and military medics.</p>
+        <p class="footer-disclaimer">For Training Use Only — Not for Clinical Use</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Products</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#catalog" class="footer-link">IO Humeral Training Model</a></li>
+          <li><a href="#catalog" class="footer-link">Replacement Insert Set</a></li>
+          <li><a href="#catalog" class="footer-link">IO Starter Kit</a></li>
+          <li><a href="#catalog" class="footer-link">Institutional Bundle</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#company" class="footer-link">About</a></li>
+          <li><a href="#testimonials" class="footer-link">Reviews</a></li>
+          <li><a href="mailto:Kyle.Johnston@Anato-Tech.com" class="footer-link">Contact</a></li>
+          <li><a href="#contact" class="footer-link">Pre-Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Legal</h4>
+        <ul class="footer-links" role="list">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Terms of Service</a></li>
+          <li><a href="#" class="footer-link">Refund Policy</a></li>
+          <li><a href="#" class="footer-link">Cookie Settings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy-bottom">© 2025 Anato-Tech Inc. All rights reserved. · For Training Use Only — Not for Clinical Use</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X (Twitter)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
